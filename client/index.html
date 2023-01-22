@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6493276108350890"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUCY-X Your AI</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div id="chat_container"></div>
 
-      <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="Ask LUCY-X..."></textarea>
-        <button type="submit"><img src="assets/send.svg" alt="send" />
-      </form>
-    </div>
+    <style>
+      
+      
+      
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #40414F;
+      }
+      
+      .header h1 {
+        font-size: 50px;
+      }
+      
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #40414F;
+        color: black;
+      }
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #40414F;
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: 40414F;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #a5a5a5;
+        margin-top: 80px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          visibility: hidden;
+        }
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="header">
+        <h1>LUCY - X</h1>
+      </div>
+      
+      <div class="topnav">
+        <a href="./">HOME</a>
+        <a href="https://portfolio-703mmzk1v-ahmedjanwar.vercel.app/">CONTACT</a>
+        <a href="#">ABOUT</a>
+        <a href="https://portfolio-703mmzk1v-ahmedjanwar.vercel.app/" style="float:right">PORTFOLIO</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <div id="chat_container"></div>
+        <form>
+          <textarea name="prompt" rows="1" cols="1" placeholder="Ask LUCY-X..."></textarea>
+          <button type="submit"><img src="assets/send.svg" alt="send" />
+          </form>
+          </div>
+          
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            
+            <p>I Engineer software that can be deployed quickly and seamlessly, 
+              to enhance continuous integration techniques with revised integration/deployment 
+              scripts to strengthen my grasp of JavaScript and Python used to create various 
+              projects.</p>
+          </div>
+          <div class="card">
+            
+            
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <a href="https://github.com/ahmedjanwar">GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer" >
+        <h2>Ahemd Anwar 2023 &copy;</h2>
+      </div>
+      
+  
 
     <script type="module" src="script.js"></script>
   </body>
