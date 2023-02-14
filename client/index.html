@@ -100,6 +100,44 @@
         background: #a5a5a5;
         margin-top: 80px;
       }
+
+      /* pop-up call out*/
+      .callout {
+  position: center;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 900px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+#demo{
+  font-size: 60px;
+}
       
       /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 800px) {
@@ -133,6 +171,15 @@
       
       <div class="row">
         <div class="leftcolumn">
+        <div class="callout">
+          <div class="callout-header">ATTENTION- Site Getting Down!</div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          <div class="callout-container">
+            <p>This site is going to be shifted to its new destination link. <a href="https://lucyx.ahmedjemal.com/">LucyX</a>. Remaining Time <p id="demo"></p> </p>
+          </div>
+        </div>
+
+
           <div class="card">
             <div id="chat_container"></div>
         <form>
@@ -160,6 +207,7 @@
             <a href="https://github.com/ahmedjanwar">GitHub</a>
           </div>
         </div>
+        
       </div>
       
       <div class="footer" >
